@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HeaderBytecodeComponent } from './componentes/app-header-bytecode/header-bytecode.component';
 import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferencia.component';
 import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
@@ -12,17 +13,17 @@ import locatePt from '@angular/common/locales/pt';
 registerLocaleData(locatePt, 'pt');
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NovaTransferenciaComponent,
-    HeaderBytecodeComponent,
-    ExtratoComponent,
-  ],
-  imports: [BrowserModule, FormsModule],
-  providers: [
-    { provide: LOCALE_ID, useValue: 'pt' },
-    { provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' },
-  ],
-  bootstrap: [AppComponent],
+	declarations: [
+		AppComponent,
+		NovaTransferenciaComponent,
+		HeaderBytecodeComponent,
+		ExtratoComponent
+	],
+	imports: [BrowserModule, FormsModule, HttpClientModule],
+	providers: [
+		{ provide: LOCALE_ID, useValue: 'pt' },
+		{ provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' }
+	],
+	bootstrap: [AppComponent]
 })
 export class AppModule {}
