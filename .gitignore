@@ -1,0 +1,12 @@
+# dependencies
+node_modules
+/storybook-static
+/platforms
+/plugins
+/www
+/reports
+/.idea
+/.ionic
+/.sourcemaps
+/.versions
+/.vscode
