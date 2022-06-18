@@ -10,3 +10,5 @@ node_modules
 /.sourcemaps
 /.versions
 /.vscode
+/.angular/cache/*
+angular
