@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app.routing.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HeaderBytecodeComponent } from './componentes/app-header-bytecode/header-bytecode.component';
 import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferencia.component';
@@ -19,7 +20,7 @@ registerLocaleData(locatePt, 'pt');
 		HeaderBytecodeComponent,
 		ExtratoComponent
 	],
-	imports: [BrowserModule, FormsModule, HttpClientModule],
+	imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
 	providers: [
 		{ provide: LOCALE_ID, useValue: 'pt' },
 		{ provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' }

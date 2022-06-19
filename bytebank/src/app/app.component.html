@@ -1,4 +1,13 @@
-<app-header-bytecode></app-header-bytecode>
+<!-- <app-header-bytecode></app-header-bytecode>
 <app-nova-transferencia></app-nova-transferencia>
 
-<app-extrato></app-extrato>
+<app-extrato></app-extrato> -->
+<header>
+	<a routerLink="extrato" routerLinkActive="ativo">Byteback</a>
+	<a routerLink="nova-transferencia" routerLinkActive="ativo"
+		>Nova Transferencia</a
+	>
+</header>
+<main>
+	<router-outlet></router-outlet>
+</main>
